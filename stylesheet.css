@@ -4,6 +4,16 @@ body{
     margin: 0px;
     padding: 0px;
 }
+footer{
+  background: transparent;
+  text-align: right;
+  position: fixed;
+  font-size: 30px;
+}
+footer a{
+  color: white;
+  border:2px solid black;
+}
 .home{
     background-image: url("https://s-media-cache-ak0.pinimg.com/originals/ce/82/9e/ce829e36c18b2bae2d122a4bc90c8d80.jpg");
     height: 680px;
@@ -75,8 +85,9 @@ body{
 .project{
     display: block;
     margin-top: 20px;
-    background-color: mediumvioletred;
+    background-color: palevioletred;
     height: 700px;
+    text-align: center;
 }
 .project .row{
     margin: 90px 0px 90px 0px;
@@ -93,7 +104,7 @@ body{
   position: relative;
   text-align: center;
   cursor: default;
-  background: #42b078;
+  background: black;
 }
 
 .project .hovereffect .overlay {
@@ -176,16 +187,36 @@ body{
 /*my blog div section*/
 .blog{
     display: block;
-    background-color: palevioletred;
+    background-color: mediumvioletred;
     height: 700px;
+}
+.blog h1{text-align: center;}
+.blogbox{
+  margin-left: 20%;
+  width: 60%;
+  height: 600px;
+  overflow: scroll; 
+  padding:15px;
+  background-color: hotpink;
 }
 /*contact me section */
 .contact{
     display: block;
     background-color:#B64DB6;
     height: 700px;
+    text-align: center;
+}
+.contactbox{
+  margin-top:10%;
+}
+
+.test{
+  margin-left:30%;
+  width: 500px;
+  height: 500px; 
 }
 .hovereffect-contact {
+  /*margin-left: 165%; */
   width: 100%;
   height: 100%;
   float: left;
@@ -207,13 +238,15 @@ body{
 .hovereffect-contact img {
   display: block;
   position: relative;
+  width: 500px;
+  height: 500px; 
 }
 
 .hovereffect-contact h2 {
   text-transform: uppercase;
   color: #fff;
   text-align: center;
-  font-size: 17px;
+  font-size: 30px;
 }
 
 .hovereffect-contact:hover h2 {
@@ -259,7 +292,7 @@ body{
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 40%;
+  width: 60%;
   height: 60%;
   border: 2px solid #fff;
   content: '';
@@ -297,6 +330,7 @@ body{
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
   padding: 0px 5px;
+  font-size: 40px;
 }
 
 .hovereffect-contact p a:first-child i {

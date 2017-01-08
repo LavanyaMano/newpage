@@ -2,12 +2,7 @@
 layout: page
 title: About
 ---
-<!-- 
-<div id="red"></div>
-<div id="blue"></div>
-<div id="yellow"></div>
-<div id="green"></div>
- -->
+
 <div class="home" id="home">
   <div class="container">
       <h1>Hello World!</h1>
@@ -48,25 +43,7 @@ title: About
     </div>
 </div>
 <div class="project" id="project">
-<!--   <a href="https://tweet-new.herokuapp.com/accounts/login/?next=/users/" class="list-group-item">
-    Tweet-new! 
-  </a>
-  <a href="https://shopgrocery.herokuapp.com/" class="list-group-item">
-    Shop-grocery.
-  </a>
-  <a href="https://shielded-forest-19952.herokuapp.com/calculator" class="list-group-item">
-    #Apps-bundled#
-  </a>
-  <a href="https://peaceful-basin-32370.herokuapp.com/" class="list-group-item">
-    Custom-Library
-  </a>
-  <a href="https://lavanyamano.github.io/angular-To-do-list//" class="list-group-item">
-    To-do-list ! Simplified !
-  </a>
-  <a href="http://idea-1.qinp6r3ixk.us-east-1.elasticbeanstalk.com/" class="list-group-item">
-    Ideas (search, share and use)
-  </a> -->
-
+  <h1>Projects</h1>
     <div class="row">
     <div class="col-md-4">
         <div class="hovereffect">
@@ -107,30 +84,47 @@ title: About
   
 </div>
 <div class="blog" id="blog">
-    
+    <h1>Blog posts</h1>
+    <div class="blogbox">
+      {% for post in site.posts %}
+        <h3>{{ post.title }}</h3>
+        <p><small>{{ post.date | date: "%b %d, %Y" }}</small></p>
+        <p>{{post.post_description}}</p>
+        <a href="{{ post.url }}">Click here to read</a>
+        <hr>
+    {% endfor %} 
+    </div>
 </div>
+
+
 <div class="contact" id="contact">
-    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+
+<div class="contactbox">
+      <div class="test">
     <div class="hovereffect-contact">
-        <img class="img-responsive" src="http://placehold.it/316x195" alt="">
+        <img class="img-responsive" src="http://images.freeimages.com/images/previews/eb8/grunge-photos-grey-1142280.jpg" alt="">
             <div class="overlay">
-                <h2>Hover effect 7</h2>
+                <h2>Contact Me</h2>
                 <p>
-                    <a href="#">
+                    <a href="https://www.linkedin.com/in/lavanya-manoharan-269a7b17?trk=hp-identity-photo">
                         <i class="fa fa-twitter"></i>
                     </a>
-                    <a href="#">
-                        <i class="fa fa-facebook"></i>
+                    <a href="https://github.com/LavanyaMano/Lavanya">
+                        <i class="fa fa-github"></i>
+                    </a>
+                    <a href="http://stackoverflow.com/users/6580467/lavanya-mano">
+                        <i class="fa fa-stack-overflow"></i>
                     </a>
                     <a href="#">
-                        <i class="fa fa-instagram"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa fa-dribbble"></i>
+                        <i class="fa fa-inbox"></i>
                     </a>
                 </p>
             </div>
+
     </div>
 </div>
 </div>
+ 
+    </div>
+
 
