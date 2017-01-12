@@ -3,7 +3,7 @@ layout: page
 title: Four weeks at Bootcamp
 post_description: It has been four weeks since the class started. I remember the week one, stressed & confused.Now I feel the opposite. I am feeling more confident. ...
 ---
-
+<div class="post">
 <h2>
     Four weeks at Bootcamp
 </h2>
@@ -27,4 +27,4 @@ Learned to create apps in python.Learned a lot in just four weeks. Working in te
 
 
 
-
+</div>

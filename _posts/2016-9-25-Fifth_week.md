@@ -3,7 +3,7 @@ layout: page
 title: Fifth week in Bootcamp
 post_description: This is Django week. Last We had pair programing in word counter app. Then  ...
 ---
-
+<div class="post">
 <h2>
     Fifth week in Bootcamp
 </h2>
@@ -23,5 +23,5 @@ New project work is now given to create a music app.This is also a group project
 
 On friday, we went to Space Tango on a field trip. Space Tango sends the research samples  to space stations. They monitor the samples using sensors and receives the datas like temperature, growth or any other relavent attributes. These datas are recevied and stored in their databases and retrieved for calculations/processing for the required purpose. Thus had a glimpse of web tool application (or database/software) in space program.
 
-
+</div>
 

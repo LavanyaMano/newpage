@@ -8,11 +8,13 @@ footer{
   background: transparent;
   text-align: right;
   position: fixed;
-  font-size: 30px;
+  font-size: 20px;
 }
-footer a{
+.circle{
   color: white;
   border:2px solid black;
+  border-radius: 55%;
+  background-color: #F7C9F7;
 }
 .home{
     background-image: url("https://s-media-cache-ak0.pinimg.com/originals/ce/82/9e/ce829e36c18b2bae2d122a4bc90c8d80.jpg");
@@ -199,6 +201,48 @@ footer a{
   padding:15px;
   background-color: hotpink;
 }
+.post{
+  background-color: blue;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
 /*contact me section */
 .contact{
     display: block;
@@ -367,3 +411,32 @@ footer a{
   opacity: 1;
   filter: alpha(opacity=100);
 }
+
+/*modal page css codes*/
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+.modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+}
+.modalDialog > div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    background: -moz-linear-gradient(#fff, #999);

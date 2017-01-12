@@ -3,7 +3,7 @@ layout: page
 title: Explore Github
 post_description: I started using Github for bootcamp pre-work assignment. Since then ...
 ---
-
+<div class="post">
 <h2>
     Explore Github
 </h2>
@@ -22,3 +22,4 @@ I created a milestone with target time. I added the issues(my tasks for the spri
 As I commit & close an issue in that milestone, I can see the progress in time scale. 
 
 
+</div>

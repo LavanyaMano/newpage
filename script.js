@@ -1,15 +1,9 @@
-// $(document).ready(function() {
-//    $('div').mouseenter(function() {
-//        $(this).animate({
-//            height: '+=10px'
-//        });
-//    });
-//    $('div').mouseleave(function() {
-//        $(this).animate({
-//            height: '-=10px'
-//        }); 
-//    });
-//    $('div').click(function() {
-//        $(this).toggle(1000);
-//    }); 
-// });
+/* Open when someone clicks on the span element */
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}
